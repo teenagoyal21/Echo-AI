@@ -149,10 +149,20 @@ function App() {
   }
 
   return (
+    
     <div className="flex flex-col min-h-screen bg-purple-950 text-white">
-      <nav className="p-4 bg-[#721f83]">
+      <div className="flex justify-between items-center p-4 bg-[#721f83]">
         <h1 className="text-2xl font-bold text-center">EchoAI</h1>
-      </nav>
+        <button
+          onClick={() => {
+            setChatHistory([]); // Clear chat history
+            localStorage.removeItem("chatHistory"); // Optional: Clear localStorage
+          }}
+          className="text-sm bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
+        >
+          Clear Chat
+        </button>
+      </div>
       <div className="flex-grow p-4">
         <div className="chat-display space-y-4">
           {chatHistory.map((chat, index) => (
@@ -191,6 +201,12 @@ function App() {
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
           placeholder="Your AI mate is here to help!"
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+              e.preventDefault(); //prevents adding a new line
+              generateAnswer(e); 
+            }
+          }}
         />
         <div className="flex items-center space-x-2 ml-4">
           {recognition && (
