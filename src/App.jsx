@@ -3,7 +3,7 @@ import { useBedrockPassport, LoginPanel } from "@bedrock_org/passport";
 import "@bedrock_org/passport/dist/style.css";
 import { Routes, Route } from "react-router-dom";
 import AuthCallback from "./AuthCallback";
-import EchoAI from "./EchoAI"; // Move your full chatbot code to this new file
+import EchoAI from "./EchoAI"; 
 import "./App.css";
 
 function App() {

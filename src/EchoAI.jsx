@@ -8,9 +8,8 @@ import ShareButtons from "./components/ShareButtons";
 import { FaMicrophone, FaPaperPlane, FaVolumeUp } from "react-icons/fa";
 
 const cache = new Map();
-// Paste your entire original App() component code here, but rename it to:
+
 function EchoAI({ user, onLogout }) {
-  // ...your existing chatbot logic...
 
   const [question, setQuestion] = useState("");
   const [chatHistory, setChatHistory] = useState([]);
