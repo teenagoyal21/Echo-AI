@@ -1,6 +1,6 @@
 <div align="center"> <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="2300">
 🤖 Meet Echo AI 🤖
-<img src="./public/Echo-AI.png" width="100px" /> <a href="https://helpmate-ai.vercel.app/"><strong>Try Echo AI Live</strong></a> <h4>✦ Your smart AI assistant ✦</h4>
+<img src="./public/Echo-AI.png" width="100px" /> <a href="https://echo-ai-delta-six.vercel.app/"><strong>Try Echo AI Live</strong></a> <h4>✦ Your smart AI assistant ✦</h4>
 Echo AI is a chatbot app that answers your questions using Google Gemini API.
 
 <img src="./public/Echo Mockup.png"/>
@@ -45,9 +45,6 @@ Chat style: Continue a conversation
 Domain variety: Try topics like science, history, or entertainment.
 
 </details>
-✅ License
-Licensed under MIT
-Check the LICENSE file for details.
 
 🚀 Run Locally
 Clone this repo
